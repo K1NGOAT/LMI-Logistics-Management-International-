@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Carrier Service</title>
+    <link rel="stylesheet" href="safety.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        background: #f9f9f9;
+        margin: 0;
+        padding: 0;
+      }
+      .main-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0;
+      }
+      .logo img {
+        width: 200px;
+        height: 80px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .logo img:hover {
+        transform: scale(1.1);
+      }
+
+      /* Back Arrow Button Styling */
+      .back-button {
+        font-size: 16px;
+        color: #000;
+        cursor: pointer;
+        text-decoration: none;
+        transition: color 0.3s;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        background: #fc7100;
+        color: #fff;
+      }
+      .back-button:hover {
+        background: #e96500;
+      }
+
+      .service-detail-section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 50px;
+        background: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: fadeIn 1s ease-in-out;
+      }
+      .section-heading {
+        width: 100%;
+        text-align: left;
+        display: flex;
+        align-items: center;
+      }
+      .section-heading h2 {
+        font-size: 28px;
+        font-weight: bold;
+        color: #fc7100;
+        position: relative;
+      }
+      .section-heading h2:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 50px;
+        height: 3px;
+        background: #fc7100;
+      }
+      .content-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+      .text-container {
+        flex: 1;
+        text-align: left;
+      }
+      .text-container h3 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+        animation: fadeInUp 1s ease-in-out;
+      }
+      .text-container p, .text-container ul {
+        font-size: 16px;
+        line-height: 1.6;
+        color: #313131;
+      }
+      .text-container ul {
+        margin-left: 20px;
+      }
+      .text-container ul li {
+        margin-bottom: 8px;
+        position: relative;
+        padding-left: 20px;
+      }
+      .text-container ul li:before {
+        content: '\f00c';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        color: #fc7100;
+      }
+      .image-container {
+        width: 40%;
+        margin-left: 20px;
+      }
+      .image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+      .image-container img:hover {
+        transform: scale(1.05);
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .content-container {
+          flex-direction: column;
+        }
+        .image-container {
+          width: 100%;
+          margin-left: 0;
+          margin-top: 20px;
+        }
+      }
+
+      .footer-container {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 20px;
+      }
+    </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="header-container">
+      <div class="logo">
+        <img src="D:\Website\carint-html\images\lmi.png" alt="Company Logo">
+      </div>
+      <a href="service.html" class="back-button"><i class="fas fa-arrow-left"></i> Back</a>
+    </div>
+    <section class="service-detail-section">
+      <div class="section-heading">
+        <h2>Car Carrier Service</h2>
+      </div>
+      <div class="content-container">
+        <div class="text-container">
+          <h3>Overview</h3>
+          <p>Our Car Carrier service ensures the safe and efficient transport of vehicles across Pakistan. Whether you're relocating, buying or selling a vehicle, or managing a fleet, our service guarantees peace of mind through every step of the process.</p>
+          
+          <h3>Key Features</h3>
+          <ul>
+            <li>State-of-the-art car carriers</li>
+            <li>Professional and experienced drivers</li>
+            <li>Real-time vehicle tracking</li>
+            <li>Comprehensive insurance coverage</li>
+            <li>Affordable rates without compromising on quality and safety.</li>
+          </ul>
+          
+          <h3>Benefits</h3>
+          <ul>
+            <li>Secure and damage-free transportation</li>
+            <li>On-time delivery</li>
+            <li>Cost-effective transport solutions</li>
+            <li>Convenient pick-up and drop-off services</li>
+            <li>24/7 customer support</li>
+          </ul>
+        </div>
+        <div class="image-container">
+          <img src="images/top 11.jpeg" alt="Car Carrier Service">
+        </div>
+      </div>
+    </section>
+    <div class="footer-container">
+      <a href="service.html" class="back-button"><i class="fas fa-arrow-left"></i> Back</a>
+    </div>
+  </div>
+</body>
+</html>
